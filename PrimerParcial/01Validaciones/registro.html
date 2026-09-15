@@ -10,19 +10,29 @@
     <h1><a href="./detalle.html">VOlver al detalle del taller</a></h1>
   </header>
   <main>
-    <form class="formulario-registro">
+    <form class="formulario-registro" id="form-registro" novalidate>
       <h1>Formulario de regitro de asistencia</h1>
 
       <label for="nombre">Nombre completo</label>
       <input type="text" id="nombre" name="nombre" required>
+      <span class="error" id="error-nombre"> </span>
 
       <label for="boleta">Número de boleta</label>
       <input type="text" id="boleta" name="boleta" required>
+      <span class="error" id="error-boleta"></span>
 
+      <label for="fecha">Fecha de registro (DD/MM/AAAA)</label>
+      <input type="text" id="fecha" name="fecha" placeholder="DD/MM/AAAA" required>
+      <span class="error" id="error-fecha"></span>
+      
+      
       <button type="submit">Registrar Asistencia</button>
+      <p class="mensaje-exito" id="mensaje-exito"></p>
     </form>
 
 
   </main>
+  <script src="./js/validaciones.js"></script>
 </body>
+
 </html>

@@ -5,11 +5,11 @@ body {
     margin: 0;
     font-family: system-ui, Arial, sans-serif;
     color: #1f2937; 
-    background-color: rgb(255, 255, 255);
+    background-color:#d9e0ed;
 }
 
 header {
-    background-color: #01f3;
+    background-color: #1f2937;
     color: #ffff;
     padding: 1.5rem;
     text-align: center;
@@ -37,7 +37,7 @@ footer{
 }
 /*Cátalogo de talleres */
 
-.catago {
+.catalogo {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 1rem;
@@ -52,7 +52,7 @@ footer{
 }
 .tarjeta h2 {
     margin-top: 0;
-    front-size: 1.1rem;
+    font-size: 1.1rem;
 
 }
 .tarjeta a {
@@ -61,3 +61,72 @@ footer{
 
 }
 
+.formulario-registro {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    max-width: 420px;
+    margin: 0 auto;
+    padding: 1.5rem;
+    background-color: #ffffff;
+    border-radius: 0.5rem;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.formulario-registro input {
+    padding: 0.6rem 0.8rem;
+    border: 1px solid #cbd5e1;
+    border-radius: 0.375rem;
+    font-size: 1rem;
+    transition: border-color 0.2s;
+}
+
+.formulario-registro input:focus {
+    outline: none;
+    border-color: #1f2937;
+}
+
+.formulario-registro button {
+    background-color: #1f2937;
+    color: #ffffff;
+    border: none;
+    border-radius: 0.375rem;
+    padding: 0.7rem 1.2rem;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.2s;
+}
+
+.formulario-registro button:hover {
+    background-color: #374151;
+    transform: translateY(-1px);
+}
+
+.mensaje-exito.fallo {
+    color: #b91c1c;
+    background-color: #fee2e2;
+    border: 1px solid #fca5a5;
+    border-radius: 0.375rem;
+    padding: 0.75rem 1rem;
+    font-weight: 500;
+}
+
+.formulario-registro input.invalido {
+    border-color: #dc2626;
+    background-color: #fef2f2;
+}
+
+.formulario-registro .error {
+    color: #dc2626;
+    font-size: 0.85rem;
+}
+
+.mensaje-exito.exito {
+    color: #15803d;
+    background-color: #dcfce7;
+    border: 1px solid #86efac;
+    border-radius: 0.375rem;
+    padding: 0.75rem 1rem;
+    font-weight: 500;
+}
