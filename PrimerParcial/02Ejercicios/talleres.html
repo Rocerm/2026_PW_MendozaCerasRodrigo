@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <header>
+        <h1> Ejercicos con node</h1>
+    </header>
+    <main>
+        <section class="ejercicio 1">
+            <h2 id="titulo-arreglos"> Arreglos del código  <code>01-arreglos.js</code></h2>
+
+            <p>Datos de prueba con js</p>
+            <div class="tabla-scroll">
+
+            <table id="tabla-talleres">
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Instructor</th>
+                        <th>Cupo</th>
+                        <th>Inscritos</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+
+                </tbody>
+
+            </table>
+            </div>
+
+            <form id="form-arreglos" class="formulario">
+                <div class="campos">
+                    <label for="operacion-arreglo" name="operacion arreglo">Operacion</label>
+
+                    <select name="operacion-arreglo" id="operacion-arreglo">
+
+                        <option value="forEach">For-Each - Lista simple</option>
+
+                        <option value="map">map - Copia solo nombres</option>
+
+                        <option value="filtrer">filtrer - Filtrar Talleres con cupo lleno</option>
+
+                        <option value="find">find - Buscar por nombre del instructor</option>
+
+                        <option value="reduce">Reduce - Total de inscritos en todos los Talleres/option>
+
+                        <option value="filtrer-map"> Filtrer + map - nombre de talleres con cupo disponible</option>
+
+                    </select>
+                </div>
+
+                <button type="submit">Ejecutar</button>
+            </form>
+
+            <output class="resultado" id="resultado-arreglo" for="form-arreglo"></output>
+        </section>
+    </main>
+
+    <script src="./js/apps.js"></script>
+</body>
+</html>
+
