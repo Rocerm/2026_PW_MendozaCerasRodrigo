@@ -1,4 +1,104 @@
+
+/*para la tabla */
 #resultado-arreglo {
     white-space: pre-line;
 }
 
+.tabla-scroll {
+  overflow-x: auto;
+  margin: 1.5rem 0;
+}
+
+#tabla-talleres {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: system-ui, sans-serif;
+  font-size: 0.95rem;
+}
+
+#tabla-talleres thead {
+  background-color: #1e293b;
+}
+
+#tabla-talleres thead th {
+  color: #ffffff;
+  text-align: left;
+  padding: 0.75rem 1rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}
+
+#tabla-talleres tbody tr {
+  border-bottom: 1px solid #ffffff;
+  transition: background-color 0.15s ease;
+}
+
+#tabla-talleres tbody tr:hover {
+  background-color: #ffffff;
+}
+
+#tabla-talleres tbody td {
+  padding: 0.75rem 1rem;
+}
+
+/* Nombre del taller: color fuerte y en negrita */
+#tabla-talleres tbody td:first-child {
+  color: #000;
+
+  font-weight: 700;
+}
+
+/*  */
+#tabla-talleres tbody td:nth-child(2),
+#tabla-talleres tbody td:nth-child(3),
+#tabla-talleres tbody td:nth-child(4) {
+  color: #0f172a;
+  font-weight: 267;
+}
+
+
+/*no me salio este para que la letra cambiara de color*/
+#tabla-talleres tbody td:nth-child:hover(2),
+#tabla-talleres tbody td:nth-child:hover(3),
+#tabla-talleres tbody td:nth-child:hover {              
+  color: #ffffff;
+}
+
+
+
+/*principal para el main*/
+
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    font-family: system-ui, Arial, sans-serif;
+    color: #1f2937; 
+    background-color:#d9e0ed;
+}
+
+header {
+    background-color: #1f2937;
+    color: #ffff;
+    padding: 1.5rem;
+    text-align: center;
+
+}
+
+
+
+main{
+    margin: 0 auto;
+    padding: 1.5rem;
+    max-width: 960px;
+
+}
+
+footer{
+    text-align: center ;
+    padding: 1rem;
+    color: #6b7280;
+    font-size: 0.875rem;
+
+}   

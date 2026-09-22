@@ -10,17 +10,18 @@ const talleres = [
 function pintarTabla() {
     const tabla = document.querySelector('#tabla-talleres tbody');
     
-
-    talleres.forEach((t) => {const fila = document.createElement('tr');
-        
-        fila.innerHTML = `
-            <td>${t.nombre}</td>
-            <td>${t.instructor}</td>
-            <td>${t.cupo}</td>
-            <td>${t.inscritos}</td>
+    const filasHTML = talleres.map((t) => {
+        return `
+            <tr>
+                <td>${t.nombre}</td>
+                <td>${t.instructor}</td>
+                <td>${t.cupo}</td>
+                <td>${t.inscritos}</td>
+            </tr>
         `;
-        tabla.appendChild(fila);
-    });
+    }).join('');
+    
+    tabla.innerHTML = filasHTML; 
 }
 
 pintarTabla();
@@ -49,9 +50,9 @@ formArreglos.addEventListener('submit', (evento) =>{
             resultado = talleres.filter((t) => t.inscritos >= t.cupo).map((t) => t.nombre).join('\n \n \n \n  ');
             break;
 
-        case 'find' :
-            resultado = talleres.find((t) => t.instructor === 'Ing. María López' ) ;
-            break;
+        case 'find':
+        resultado = talleres.find((t) => t.instructor === 'Ing. María López').nombre ;
+        break;
         
         case 'reduce':
             resultado = talleres.reduce((sum, t) => sum + t.inscritos, 0);

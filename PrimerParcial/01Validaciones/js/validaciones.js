@@ -44,6 +44,12 @@ const patrones = {
                 spanError.textContent = esvalido ? '' : mensajes[campo];
 
                 if(!esvalido) formularioValido = false;
+
+                mensajeExito.textContent = formularioValido
+                 ? 'Registro exitoso'
+                : 'Por favor, revisa los errores en el formulario.';
+                mensajeExito.classList.toggle('exito', formularioValido);
+                mensajeExito.classList.toggle('fallo', !formularioValido);
              }
 
             const mensajeExito = document.getElementById('mensaje-exito');

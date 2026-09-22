@@ -30,7 +30,7 @@ talleres.forEach((t) => console.log(`- ${t.nombre} --- (${t.inscritos}/${t.cupo}
 
   console.log("Aplicando la funcion find a la instructora 'Ing. María López")
   const instmari = talleres.find((t) => t.instructor === 'Ing. María López' ) 
-  console.log("El primer taller impartido por " + instmari )
+  console.log(instmari )
 
 // TODO: reduce — calcula `totalInscritos`, la suma de inscritos de todos los talleres
 
