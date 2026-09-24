@@ -62,6 +62,53 @@
 
             <output class="resultado" id="resultado-arreglo" for="form-arreglo"></output>
         </section>
+
+        <section class="ejercicio" aria-labelledby="titulo-objeto">
+            <h2>Segunda parte de ejercicios manejo de Objeto sy Json</h2>
+            <p>Edita el taller y elije que opercacion aplicarle: </p>
+
+            <form class="formulario" id="form-objeto">
+                <div class="campo">
+                    <label for="obj-nombre">Nombre</label>
+                    <input type="text" id="obj-nombre" name="obj-nombre" value="Introcucción a Python">
+                </div>
+
+                    <div class="campo campo-corta">
+                    <label for="obj-instructor">Instructor</label>
+                    <input type="text" id="obj-instructor" name="obj-instructor" value="Ing. María López" min="0">
+                </div>
+
+                <div class="campo">
+                    <label for="obj-cupo">Cupo</label>
+                    <input type="text" id="obj-cupo" name="obj-cup" value="25" min="0">
+                </div>
+
+                <div class="campo">
+                    <label for="obj-inscritos">Inscritos</label>
+                    <input type="text" id="obj-inscritos" name="obj-inscritos" value="25" min="0">
+                </div>
+
+                <div class="campo"> 
+                    <label for="operacion-objeto">Operacion a Realizar</label>
+                    <select name="operacion-objeto" id="operacion-objeto">
+                        <option value="keys">Object.keys </option>
+                        <option value="values">Object.values </option>
+                        <option value="entries">Object.entries </option>
+                        <option value="stringify"> JSON.stringify </option>
+                        <option value="roundtrip"> Ida y vuelta de cadena JSON </option>
+
+
+                    </select>
+                </div>
+                <button type="submit"> Ejectar opcion de objeto</button>
+            </form>
+
+            <output class="resultado"  id="resultado-objeto" for="form-objeto"></output>
+
+
+
+        </section>
+
     </main>
 
     <script src="./js/apps.js"></script>
