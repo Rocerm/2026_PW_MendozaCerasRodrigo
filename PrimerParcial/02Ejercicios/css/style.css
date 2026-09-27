@@ -9,6 +9,11 @@
   margin: 1.5rem 0;
 }
 
+.tabla-scroll {
+  border-radius: 8px;
+        border: 1px solid #FF8360;
+}
+
 #tabla-talleres {
   width: 100%;
   border-collapse: collapse;

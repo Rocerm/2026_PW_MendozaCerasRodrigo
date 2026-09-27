@@ -27,7 +27,7 @@ function pintarTabla() {
 pintarTabla();
 
 const formArreglos = document.getElementById('form-arreglos');
-const resultadoArreglos = document.getElementById('re   sultado-arreglo');
+const resultadoArreglos = document.getElementById('resultado-arreglo');
 const selectOperacionArreglo = document.getElementById('operacion-arreglo');
 
 formArreglos.addEventListener('submit', (evento) =>{
@@ -47,7 +47,7 @@ formArreglos.addEventListener('submit', (evento) =>{
             break;
 
         case 'filtrer':
-            resultado = talleres.filter((t) => t.inscritos >= t.cupo).map((t) => t.nombre).join('\n \n \n \n  ');
+            resultado = talleres.filter((t) => t.inscritos >= t.cupo).map((t) => t.nombre).join('\n');
             break;
 
         case 'find':
