@@ -45,16 +45,12 @@ const patrones = {
 
                 if(!esvalido) formularioValido = false;
 
-                mensajeExito.textContent = formularioValido
-                 ? 'Registro exitoso'
-                : 'Por favor, revisa los errores en el formulario.';
-                mensajeExito.classList.toggle('exito', formularioValido);
-                mensajeExito.classList.toggle('fallo', !formularioValido);
+               
              }
 
             const mensajeExito = document.getElementById('mensaje-exito');
 
-            mensajeExito.textContent = formularioValido ? 'Registro exitoso' : 'rEVISA errores'
+            mensajeExito.textContent = formularioValido ? 'Registro exitoso' : '-Revisa errores para continuar'
 
         })
     }

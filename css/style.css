@@ -1,0 +1,111 @@
+/* genral */
+body {
+    background-color: #Ffff; /* Color crema claro */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+/* para separar  */
+.container {
+    max-width: 1200px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px; /* Separación vertical entre la sección de arriba y abajo */
+}
+
+
+
+.content {
+    grid-column: 1; 
+    background-color: #FBF3D0;
+    color: #3f100a;
+    padding: 20px 25px;
+    border-radius: 8px;
+    border: 1px solid #FF8360;
+    line-height: 1.6;
+    
+}
+
+
+    .table{
+            border-radius: 8px;
+        border: 1px solid #FF8360;
+    }
+
+
+
+    /*PAra deocrar locura buscar*/
+ 
+
+/* Bloque de Encabezado (TITULO - Izquierda) */
+.header {
+    background-color: #D45060; /* Rojo oscuro intenso */
+    color: #FFE8D6;
+    padding: 30px 20px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+/* Contenedor exterior de la Tabla (TABLA - Derecha) */
+.tablas-ejercicios {
+    background-color: #FFE8D6;
+    border: 1px solid #FF8360;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(156, 43, 27, 0.05);
+}
+
+/* Estilos internos de la Tabla */
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+.table th {
+    background-color: #FF8360; 
+    color: white;
+    padding: 12px 15px;
+    font-weight: 600;
+}
+
+.table td {
+    padding: 15px;
+    border-bottom: 1px solid #FFB79A;
+    color: #4a1912;
+    font-size: 15px;
+    transition: all 0.2s ease;
+}
+
+
+    
+.table a {
+    color: #E8543F; 
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.2s ease;
+    display: inline-block;
+}
+
+/* EÑ hover de los estos de este de la tabla cuando pasas , en la colua */
+.table tbody tr:hover td {
+    background-color: rgba(255, 183, 154, 0.4); 
+    color: #9C2B1B;
+}
+ /*EL del kink ,ala parte de link cuando pasas por encma*/
+.table a:hover {
+    color: #7A3E9D; 
+    transform: scale(1.5);
+}
+
