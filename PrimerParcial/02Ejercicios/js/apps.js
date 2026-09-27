@@ -27,7 +27,7 @@ function pintarTabla() {
 pintarTabla();
 
 const formArreglos = document.getElementById('form-arreglos');
-const resultadoArreglos = document.getElementById('resultado-arreglo');
+const resultadoArreglos = document.getElementById('re   sultado-arreglo');
 const selectOperacionArreglo = document.getElementById('operacion-arreglo');
 
 formArreglos.addEventListener('submit', (evento) =>{
@@ -99,9 +99,7 @@ formobjeto.addEventListener('submit', (evento) =>{
             break;
         case 'entries':
 
-            resultado = JSON.stringify(Object.entries(taller).map
-        [campo, valor ].join(`\n`)
-        );
+            resultado = JSON.stringify(Object.entries(taller) );
             break;
         case 'stringify':
             //el profe
