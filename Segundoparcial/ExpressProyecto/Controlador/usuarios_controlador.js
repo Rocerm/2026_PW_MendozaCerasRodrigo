@@ -7,7 +7,7 @@ const {validarCorreo, validarBoleta, validarContrasena} = require('../validacion
 
 //que pasa si e duplica la bolwera
 
-function esDuplicado(eror){
+function esDuplicado(error){
     return error.code == 'ER_DUPLICADO_ENTRY'|| error.code === '23505' 
 }
 
