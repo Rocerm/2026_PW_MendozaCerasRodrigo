@@ -1,4 +1,4 @@
-const mysql = requiere('')
+const mysql = require('')
 
 const pool  = mysql.createPool({
 
